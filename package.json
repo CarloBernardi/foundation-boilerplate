@@ -1,0 +1,39 @@
+{
+  "name": "webpack_foundation-6_boilerplate",
+  "version": "1.0.0",
+  "description": "Foundation 6 Boilerplate, Bundled with Webpack, Managed by Laravel Mix",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarloBernardi/foundation-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarloBernardi/foundation-boilerplate/issues"
+  },
+  "homepage": "https://github.com/CarloBernardi/foundation-boilerplate",
+  "keywords": [
+    "foundation 6",
+    "boilerplate",
+    "font awesome",
+    "webpack",
+    "laravel mix"
+  ],
+  "author": "Carlo Bernardi",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "^6.4.4-rc1",
+    "motion-ui": "^1.2.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "cross-env": "^5.0.1",
+    "laravel-mix": "^1.5.0"
+  }
+}
