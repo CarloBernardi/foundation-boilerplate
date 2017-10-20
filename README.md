@@ -3,7 +3,7 @@
 
 
 ## Introduction
-**Foundation Boilerplate** comes with [Foundation 6.4.4-rc1](https://foundation.zurb.com/) framework, [FontAwesome](http://fontawesome.io/) icons pack and makes use of [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your application.
+**Foundation Boilerplate** comes with [Foundation 6.4](https://foundation.zurb.com/) framework, [FontAwesome](http://fontawesome.io/) icons pack and makes use of [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your application.
 
 Foundation Boilerplate is **preconfigured to perform these Mix tasks**:
 - Sass compilation with URL rewriting and Autoprefixer PostCSS plugin
