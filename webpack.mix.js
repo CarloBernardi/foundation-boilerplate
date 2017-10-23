@@ -50,11 +50,30 @@ mix
         server: PROXY === null,
         proxy: PROXY,
         files: [
-            '*.{php|html}',
-            DIST + '/**/*'
+            '*.(php|html)',
+            DIST + '/**/*.(js|css)'
         ]
     });
 
+//Foundation Site 6 is not ES5 ready
+mix.webpackConfig({
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                include: [
+                    path.resolve(__dirname, 'node_modules/foundation-sites/js/')
+                ],
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: Config.babel()
+                    }
+                ]
+            }
+        ]
+    }
+});
 
 /*
  * --------------------
